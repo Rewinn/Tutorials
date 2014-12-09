@@ -2,8 +2,8 @@ function updateClock() {
     $('.clock').show();
     var currentTime = new Date();
     var hours       = currentTime.getUTCHours();
-    var minutes     = currentTime.getUTCHours();
-    var seconds     = currentTime.getUTCHours();
+    var minutes     = currentTime.getUTCMinutes();
+    var seconds     = currentTime.getUTCSeconds();
 
     var degree_seconds = -90 + (seconds * 6);
     var degree_minutes = -90 + (minutes * (360 / 6));
@@ -20,5 +20,7 @@ updateClock();
 
 
 
+//UTC
+//space before deg
 
 

@@ -1,0 +1,92 @@
+body {
+	background-color: #00CCFF;
+	font-family: 'Lato', sans-serif;
+}
+
+h1 {
+	font-size: 60px;
+	color: white;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+#main_form {
+	margin: auto 400px;
+	background-color: #B2F0FF;
+	border: 2px solid slategrey;
+	padding: 20px;
+}
+
+label {
+	font-weight: bold;
+}
+
+#address_input {
+	padding-bottom: 10px;
+}
+
+#email_input {
+	padding-top: 20px;
+}
+
+#email {
+	display: block;
+
+}
+
+#password {
+	display: block;
+}
+
+#submit {
+	padding-top: 20px;
+}
+
+.red {
+    border-color: red;
+}
+
+.danger {
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
