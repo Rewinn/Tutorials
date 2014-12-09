@@ -1,15 +1,14 @@
 console.log('Hello!');
-var $emailField    = $('#email');
+var $emailField = $('#email');
 var $passwordField = $('#password');
 
 $('form').on('submit', function(e) {
 	e.preventDefault();
-}
 
 $emailField.removeClass('red');
 $passwordField.removeClass('red');
 
-if ($emailField.val() === '') {
+if ($emailField.val() == '') {
 	alert('You must fill the field out.');
 	$emailField.addClass('red');
 	return false;
@@ -32,4 +31,4 @@ if ($passwordField.val() == 'doggy') {
 	return false;
 } 
 	alert('Yay! Form submitted!');
-
+});
