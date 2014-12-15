@@ -1,10 +1,3 @@
-<!--1. The HTML page should have a button that reads "Up"
-
-2. The page should have a DIV containing some initial text: the number 0.
-
-3. Whenever the user presses the Up button, the number should increment by 1-->
-
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -12,14 +5,13 @@
 		<title>Up Button</title>
 		<link rel="stylesheet" type="text/css" href="css/button.css">
 	</head>
-	<header>
-		<h1>Counter<h1>
-	</header>
 	<body>
-		<div>
-			<p>Number: <a id="clicks">O</p>
+		<div class="box">
+			<label title="Counter"></label>
+			<input id="quantity" value="0"/>
+			<button id="down" onClick="modify_quantity(-1)">-1</button>
+			<button id="up" onClick="modify_quantity(+1)">+1</button>
 		</div>
-		<button type="button name="button" onClick="onClick()">Up!</button>
 		<script src="js/button.js"></script>
 	</body>
 </html>
