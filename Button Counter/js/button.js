@@ -28,8 +28,3 @@ clickUp.addEventListener("click", upCounter, false);
 
 
 
-
-var newScreen = parseInt(origScreen, 10) + number;
-  
-  document.getElementById('screen').value = newScreen;
-  return newScreen;
