@@ -1,8 +1,8 @@
 /*jslint browser:true */
 
 function downCounter () {
-	var subtract = document.getElementById("minus");
-	if (this.value <= 0) {
+	var downButton = document.getElementById("minus");
+	if (downButton.value <= 0) {
 		subtract = 0;
 	}	else {
 		subtract = -1;
@@ -14,10 +14,10 @@ var clickDown = document.getElementById("minus");
 clickDown.addEventListener("click", downCounter, false);
 
 function upCounter () {
-	var addition = document.getElementById("plus");
+	var quantity = document.getElementById("qty");
 	console.log("YAY!");
-	if (this.value >= 0) {
-		addition = +1;
+	if (quantity.value >= 0) {
+		quantity.value = +1;
 	}
 }
 
