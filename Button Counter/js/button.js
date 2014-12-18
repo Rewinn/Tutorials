@@ -1,24 +1,21 @@
 /*jslint browser:true */
-
 function downCounter () {
-	var downButton = document.getElementById("minus");
-	if (downButton.value <= 0) {
-		subtract = 0;
-	}	else {
-		subtract = -1;
+	var quantity   = document.getElementById("qty");
+	quantity.value = parseInt(quantity.value, 10) - 1;
+
+	if (quantity.value < 0) {
+		quantity.value = 0;
 	}
-	console.log("boo");
 }
 
 var clickDown = document.getElementById("minus");
 clickDown.addEventListener("click", downCounter, false);
 
+
+
 function upCounter () {
-	var quantity = document.getElementById("qty");
-	console.log("YAY!");
-	if (quantity.value >= 0) {
-		quantity.value = +1;
-	}
+	var quantity     = document.getElementById("qty");
+	  quantity.value = parseInt(quantity.value, 10) + 1;
 }
 
 var clickUp = document.getElementById("plus");
