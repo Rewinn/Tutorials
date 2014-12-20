@@ -6,32 +6,30 @@ var message    = salutation + name +'!';
 var welcome = document.getElementById('greeting');
 welcome.textContent = message;
 
+var elSign = document.getElementById('userSign');
 
+function calcCosts() {
+	var tiles      = elSign.value.length;
+	var cost       = 5;
+	var shipCost   = 10;
+	var subtotal   = tiles * cost;
+	var grandTotal = subtotal + shipCost;
 
-//Sign Input
-var sign       = 'I love Berners';
-var tiles      = sign.length;
-var cost       = 5;
-var shipCost   = 10;
-var subtotal   = tiles * cost;
-var grandTotal = subtotal + shipCost;
+	var elTiles         = document.getElementById('tiles');
+	elTiles.textContent = tiles;
 
-//Sign Output
-var elSign          = document.getElementById('userSign');
-elSign.textContent  = sign;
+	var elSubTotal      = document.getElementById('subTotal');
+	elSubTotal.textContent = '$' + subtotal;
 
-var elTiles         = document.getElementById('tiles');
-elTiles.textContent = tiles;
+	var elShip          = document.getElementById('shipping');
+	elShip.textContent  = '$' + shipCost;
 
-var elSubTotal      = document.getElementById('subTotal');
-elSubTotal.textContent = '$' + subtotal;
+	var elTotal         = document.getElementById('total');
+	elTotal.textContent = '$' + grandTotal;	
+}
 
-var elShip          = document.getElementById('shipping');
-elShip.textContent  = '$' + shipCost;
+// Run this on first page load.
+calcCosts();
 
-var elTotal         = document.getElementById('total');
-elTotal.textContent = '$' + grandTotal;
-
-
-
-
+// Re-run it on change
+elSign.addEventListener('keyup', calcCosts);
